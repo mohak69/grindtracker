@@ -1,0 +1,44 @@
+**Context of the Project (context.txt)**
+
+Title: **Daily Grind Tracker for GATE and DSA**
+
+Purpose:
+The project is built to help students preparing for GATE and practicing DSA to track their daily study discipline. The goal is to mark daily progress for two key areas: **GATE preparation** and **DSA practice**, and calculate a daily score based on task completion.
+
+Scope:
+- Track only **GATE** and **DSA** daily status.
+- Record the study status ('Done' or 'Skipped') for each.
+- Store daily entries in a cloud database (Supabase) for easy access and future analysis.
+- Calculate and store a simple **daily score** (0 to 2) based on the tasks done.
+
+Features:
+- Simple frontend using HTML and Tailwind CSS.
+- Backend server built with Node.js and Express.js.
+- Supabase as the backend database to store data.
+- Scoring System:
+  - "Done" = +1 point
+  - "Skipped" = 0 point
+- Display a success/failure message on submitting the day's report.
+
+Database Structure:
+- Table Name: `daily_logs`
+- Columns:
+  - `id` (auto increment)
+  - `date` (Date)
+  - `gate_status` (Text: 'green' or 'red')
+  - `dsa_status` (Text: 'green' or 'red')
+  - `score` (Integer between 0 and 2)
+
+Why This Matters:
+- Creates accountability and discipline in a long preparation journey.
+- Shows patterns over time (e.g., lazy days, high performance weeks).
+- Acts as a self-motivation booster by seeing the consistency visually later.
+
+Future Possible Extensions:
+- Add "view past entries" page.
+- Add visual graphs to track weekly/monthly progress.
+- Add login/authentication for privacy.
+- Add leaderboard to compete with friends if needed later.
+
+This project focuses ONLY on GATE and DSA, ensuring students stay consistent with two of the most critical pillars for career and academic success.
+
